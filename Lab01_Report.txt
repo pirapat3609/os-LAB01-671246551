@@ -1,16 +1,16 @@
 ======================================================
 COE67-XXX Operating Systems - Lab 01 Report
-Name: 
-Student ID: 
+Name: pirapat laohasaran
+Student ID:671246511
 ======================================================
 
 1. Hardware Baseline:
-- OS Version:
+- OS Version:Linux 6.8.0-1052-azure
 - Number of CPU Cores:
-- Total RAM:
+- Total RAM:7.76 GB
 
 2. Observation (from htop during stress test):
-[Write your answer here]
+[The CPU usage was high, and the system was running many tasks. Memory usage was about 2.55 GB out of 7.76 GB. The system was still running normally.]
 
 3. Analysis:
-[Write your answer here]
+[The stress test increased CPU usage and system load. However, the memory usage was still at a safe level, so the system could handle the stress test without major problems.]
