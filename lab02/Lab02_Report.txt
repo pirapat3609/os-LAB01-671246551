@@ -1,0 +1,17 @@
+======================================================
+COE67-XXX Operating Systems - Lab 02 Report
+Name: pirapat laohasaran
+Student ID:671246511
+======================================================
+
+Sequential: 8.88 seconds
+Multithreading: 9.75 seconds
+Multiprocessing: 8.33 seconds
+
+2. System Observation (htop):
+Explain the difference in CPU core utilization (in htop) when running the Multithreading script vs. the Multiprocessing script.
+ANS The child process became a Zombie process. In htop, its process state was shown as Z.
+
+3. Analysis (The GIL):
+Based on your results, why did Multithreading fail to make the code run faster? Why is Multiprocessing a better choice for CPU-bound tasks (like Machine Learning data augmentation) in Python?
+ANS The multiprocessing method was the fastest in this test, with a time of 8.33 seconds. The sequential method took 8.88 seconds, while the multithreading method took 9.75 seconds. This shows that multiprocessing can improve performance for CPU-intensive tasks. The Zombie process happened because the parent process did not call os.wait() after the child process finished.
